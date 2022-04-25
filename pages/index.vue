@@ -5,6 +5,7 @@
   </header>
   <accueil-part />
   <a-propos-part />
+  <mes-services />
 </div>
 </template>
 
@@ -13,13 +14,15 @@ import Vue from 'vue'
 import navBar from '@/components/navBar.vue'
 import accueilPart from '@/components/accueilPart.vue'
 import aProposPart from '@/components/aProposPart.vue'
+import mesServices from '@/components/services/mesServices.vue'
 
 export default Vue.extend({
   name: 'IndexPage',
   components: {
     navBar,
     accueilPart,
-    aProposPart
+    aProposPart,
+    mesServices
   },
   layout () {
     return 'defaultPage'
