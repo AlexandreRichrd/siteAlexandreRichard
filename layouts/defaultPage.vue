@@ -14,5 +14,6 @@ body {
 :root{
   --background-color: #DCDCDC;
   --sub-title-color: #7F7F7F;
+  --font-color: #808080
 }
 </style>

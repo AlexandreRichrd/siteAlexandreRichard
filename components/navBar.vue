@@ -1,31 +1,48 @@
 <template>
-  <header>
-    <img src="../static/images/logo.svg" alt="logo" class="logo">
-    <ul>
-      <li>Accueil</li>
-      <li>À propos</li>
-      <li>Services</li>
-      <li>Compétences</li>
-      <li>Portfolio</li>
-      <li>Contact</li>
+  <header :class="scroll ? $style['navbarCouleur'] : $style['navbarTransparent']">
+    <img src="../static/images/logo.svg" alt="logo" :class="$style['logo']">
+    <ul :class="$style['listeNavbar']">
+      <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Accueil</li>
+      <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">À propos</li>
+      <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Services</li>
+      <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Compétences</li>
+      <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Portfolio</li>
+      <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Contact</li>
     </ul>
-    <div class="social">
-      <a href="https://www.instagram.com/alexandre_richrd/"><img src="@/static/images/instagram.png" alt="Lien Instagram" /></a>
-      <a href="https://www.linkedin.com/in/alexandre-richard-5035a3194"><img src="@/static/images/linkedin.png" alt="Lien LinkedIn" /></a>
+    <div :class="$style['social']">
+      <a href="https://www.instagram.com/alexandre_richrd/"><img src="@/static/images/instagram.png" alt="Lien Instagram" :class="$style['imageSocial']" /></a>
+      <a href="https://www.linkedin.com/in/alexandre-richard-5035a3194"><img src="@/static/images/linkedin.png" alt="Lien LinkedIn" :class="$style['imageSocial']" /></a>
     </div>
   </header>
 </template>
 
 <script>
 export default {
-
+  data(){
+    return{
+      scroll: false
+    }
+  },
+  created(){
+    document.addEventListener("scroll", () => {
+      
+      if(window.scrollY == 0){
+        this.scroll = false
+      }else{
+        this.scroll = true
+      }
+      //console.log(this.position);
+    })
+  }
 }
 </script>
 
-<style scoped>
-header{
+<style module>
+        /*ACCUEIL*/
+
+.navbarTransparent{
   background-color: rgba(172, 172, 172, 0.1);
-  height: 6.5rem;
+  height: 4.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,16 +51,17 @@ header{
   width: 100%;
 }
 
+
 .logo{
-  width: 5.5rem;
+  width: 3.5rem;
 }
 
-ul{
+.listeNavbar{
   display: flex;
   gap: 5rem
 }
 
-li{
+.membreListeNavbar{
   list-style-type: none;
   font-size: 1.2rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -55,10 +73,31 @@ li{
   gap: 2rem
 }
 
-.social img{
+.imageSocial{
   width: 1.5rem;
   opacity: 80%
 }
 
+      /* RESTE PAGE */
+
+.navbarCouleur{
+  transition: background-color 0.2s ease-in-out;
+  background-color: var(--background-color);
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23rem;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.25);
+}
+
+.membreListeNavbarCouleur{
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--font-color);
+}
 
 </style>
