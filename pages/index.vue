@@ -6,6 +6,9 @@
   <accueil-part />
   <a-propos-part />
   <mes-services />
+  <mes-competences />
+  <mon-portfolio />
+  <mon-contact />
 </div>
 </template>
 
@@ -15,6 +18,9 @@ import navBar from '@/components/navBar.vue'
 import accueilPart from '@/components/accueilPart.vue'
 import aProposPart from '@/components/aProposPart.vue'
 import mesServices from '@/components/services/mesServices.vue'
+import mesCompetences from '@/components/competences/mesCompetences.vue'
+import monPortfolio from '@/components/portfolio/monPortfolio.vue'
+import monContact from '~/components/contact/monContact.vue'
 
 export default Vue.extend({
   name: 'IndexPage',
@@ -22,7 +28,10 @@ export default Vue.extend({
     navBar,
     accueilPart,
     aProposPart,
-    mesServices
+    mesServices,
+    mesCompetences,
+    monPortfolio,
+    monContact
   },
   layout () {
     return 'defaultPage'

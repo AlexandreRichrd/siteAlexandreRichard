@@ -13,7 +13,9 @@ body {
 
 :root{
   --background-color: #DCDCDC;
+  --secondary-background-color: #C4C4C4;
   --sub-title-color: #7F7F7F;
-  --font-color: #808080
+  --font-color: #808080;
+  --main-color: #4672E3;
 }
 </style>
