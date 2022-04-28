@@ -1,12 +1,21 @@
 <template>
   <div :class="$style['partieContact']">
     <h1>Contact</h1>
+    <div :class="$style['itemsContact']">
+      <partie-gauche />
+      <formulaire-contact />
+    </div>
   </div>
 </template>
 
 <script>
+import formulaireContact from "./formulaireContact.vue"
+import partieGauche from "./partieGauche.vue"
   export default {
-    
+    components: {
+      formulaireContact,
+      partieGauche
+    }
   }
 </script>
 
@@ -15,6 +24,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.itemsContact{
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
 }
 
 h1{
