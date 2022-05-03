@@ -1,7 +1,6 @@
 <template>
   <div :class="$style['partieCompetences']">
-    <h1>Mes services</h1>
-    <h2>Des prestations adaptées à vos envies !</h2>
+    <les-titres titre="Mes compétences" soustitre="Des prestations adaptées à vos envies !" />
     <div :class="$style['competences']">
 
     </div>
@@ -9,9 +8,12 @@
 </template>
 
 <script>
-  export default {
-    
+import lesTitres from "../lesTitres.vue"
+export default {
+  components: {
+    lesTitres
   }
+}
 </script>
 
 <style module>
@@ -23,18 +25,5 @@
 
 .competences{
 
-}
-
-h1{
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 2.5em;
-}
-
-h2{
-  color: var(--sub-title-color);
-  font-weight: 400;
-  font-size: 2em;
-  margin-bottom: 5rem;
 }
 </style>

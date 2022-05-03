@@ -1,7 +1,6 @@
 <template>
   <div :class="$style['partiePortfolio']">
-    <h1>Portfolio</h1>
-    <h2>Des exemples pour cibler vos envies !</h2>
+    <les-titres titre="Portfolio" soustitre="Des exemples pour cibler vos envies !"/>
     <div :class="$style['items']">
       <div :class="$style['deuxItems']">
         <item-portfolio />
@@ -16,10 +15,12 @@
 </template>
 
 <script>
+import lesTitres from "../lesTitres.vue"
 import itemPortfolio from "./itemPortfolio.vue"
   export default {
     components:{
-      itemPortfolio
+      itemPortfolio,
+      lesTitres
     }
   }
 </script>
@@ -44,16 +45,4 @@ import itemPortfolio from "./itemPortfolio.vue"
   gap: 6rem;
 }
 
-h1{
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 2.5em;
-}
-
-h2{
-  color: var(--sub-title-color);
-  font-weight: 400;
-  font-size: 2em;
-  margin-bottom: 5rem;
-}
 </style>

@@ -31,7 +31,6 @@ export default {
       }else{
         this.scroll = true
       }
-      //console.log(this.position);
     })
   }
 }
@@ -49,6 +48,7 @@ export default {
   gap: 23rem;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 
@@ -91,6 +91,7 @@ export default {
   position: fixed;
   width: 100%;
   box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.25);
+  z-index: 10;
 }
 
 .membreListeNavbarCouleur{

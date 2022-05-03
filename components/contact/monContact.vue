@@ -1,6 +1,6 @@
 <template>
   <div :class="$style['partieContact']">
-    <h1>Contact</h1>
+    <les-titres titre="Contact" soustitre="none" />
     <div :class="$style['itemsContact']">
       <partie-gauche />
       <formulaire-contact />
@@ -9,10 +9,12 @@
 </template>
 
 <script>
+import lesTitres from "../lesTitres.vue"
 import formulaireContact from "./formulaireContact.vue"
 import partieGauche from "./partieGauche.vue"
   export default {
     components: {
+      lesTitres,
       formulaireContact,
       partieGauche
     }
@@ -30,18 +32,5 @@ import partieGauche from "./partieGauche.vue"
   display: flex;
   justify-content: center;
   gap: 4rem;
-}
-
-h1{
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 2.5em;
-}
-
-h2{
-  color: var(--sub-title-color);
-  font-weight: 400;
-  font-size: 2em;
-  margin-bottom: 5rem;
 }
 </style>

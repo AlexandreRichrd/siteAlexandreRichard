@@ -1,7 +1,6 @@
 <template>
   <div id="about">
-    <h1>À propos</h1>
-    <h2>Alexandre RICHARD, 20 ans et toutes ses dents !</h2>
+    <les-titres titre="À propos" soustitre="Alexandre RICHARD, 20 ans et toutes ses dents !"/>
     <div class="logoEtTexte">
       <div class="texte">
         <h3>Un développeur web passionné !</h3>
@@ -23,8 +22,11 @@
 </template>
 
 <script>
+import lesTitres from "./lesTitres.vue"
 export default {
-
+  components: {
+    lesTitres
+  }
 }
 </script>
 
@@ -34,18 +36,6 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 7rem 0 10rem 0;
-}
-
-h1{
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 2.5em;
-}
-
-h2{
-  color: var(--sub-title-color);
-  font-weight: 400;
-  font-size: 2em;
 }
 
 h3{

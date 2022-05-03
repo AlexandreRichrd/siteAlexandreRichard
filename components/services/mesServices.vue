@@ -1,7 +1,6 @@
 <template>
   <div id="partieServices">
-    <h1>Mes services</h1>
-    <h2>Des prestations adaptées à vos envies !</h2>
+    <les-titres titre="Mes services" soustitre="Des prestations adaptées à vos envies !" />
     <div class="cards">
       <div class="card2">
         <card-service 
@@ -32,11 +31,13 @@
 </template>
 
 <script>
+import lesTitres from '../lesTitres.vue'
 import cardService from './cardService.vue'
 
 export default {
   components: {
-    cardService
+    cardService,
+    lesTitres
   }
 }
 </script>
@@ -57,18 +58,5 @@ export default {
 .cards{
   display: flex;
   flex-direction: column;
-}
-
-h1{
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 2.5em;
-}
-
-h2{
-  color: var(--sub-title-color);
-  font-weight: 400;
-  font-size: 2em;
-  margin-bottom: 5rem;
 }
 </style>
