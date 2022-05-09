@@ -18,4 +18,12 @@ body {
   --font-color: #808080;
   --main-color: #4672E3;
 }
+
+[data-theme=darkMode]{
+  --background-color: #373737;
+  --secondary-background-color: #D8D8D8;
+  --sub-title-color: #939393;
+  --font-color: #DCDCDC;
+  --main-color: #4672E3;
+}
 </style>

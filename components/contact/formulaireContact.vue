@@ -2,14 +2,18 @@
   <div :class="$style['formulaire']">
     <h1>Contactez moi via ce formulaire afin de <span>préciser votre solution web</span></h1>
     <types-projets />
+    <le-formulaire />
   </div>
 </template>
 
 <script>
 import typesProjets from "./typesProjets.vue"
+import LeFormulaire from "./LeFormulaire.vue"
+
   export default {
     components: {
-      typesProjets
+      typesProjets,
+      LeFormulaire
     }
   }
 </script>
@@ -18,11 +22,12 @@ import typesProjets from "./typesProjets.vue"
 .formulaire{
   background-color: var(--secondary-background-color);
   width: 30rem;
-  height: 50rem;
+  height: 63rem;
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2.5rem;
 }
 
 .formulaire h1{

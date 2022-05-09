@@ -43,6 +43,6 @@
 }
 
 .cardProjet:hover{
-  box-shadow: 1x 1px 4px rgb(79, 79, 79);
+  box-shadow: 1px 1px 4px rgb(79, 79, 79);
 }
 </style>
