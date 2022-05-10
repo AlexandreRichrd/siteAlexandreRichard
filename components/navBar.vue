@@ -1,6 +1,6 @@
 <template>
   <header :class="scroll ? $style['navbarCouleur'] : $style['navbarTransparent']">
-    <img src="../static/images/logo.svg" alt="logo" :class="$style['logo']" @click="changeTheme()">
+    <img src="../static/images/logo.svg" alt="logo" :class="$style['logo']">
     <ul :class="$style['listeNavbar']">
       <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Accueil</li>
       <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">À propos</li>
@@ -33,12 +33,6 @@ export default {
         this.scroll = true
       }
     })
-  },
-  methods: {
-    changeTheme(){
-      this.theme = this.theme === 'darkMode' ? '' : 'darkMode'; // toggles theme value
-        document.documentElement.setAttribute('data-theme', this.theme);
-    }
   }
 }
 </script>

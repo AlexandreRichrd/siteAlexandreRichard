@@ -2,6 +2,7 @@
   <div class="titres">
     <h1>{{ titre }}</h1>
     <h2 v-if="soustitre!='none'">{{ soustitre }}</h2>
+    <hr>
   </div>
 </template>
 
@@ -37,6 +38,14 @@ h2{
   color: var(--sub-title-color);
   font-weight: 400;
   font-size: 2em;
+  margin-bottom: 3rem;
+}
+
+hr{
+  background-color: var(--main-color);
+  border: none;
+  width: 5rem;
+  height: 0.3rem;
   margin-bottom: 5rem;
 }
 </style>

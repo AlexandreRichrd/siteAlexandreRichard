@@ -4,6 +4,9 @@
     <nav-bar />
   </header>
   <accueil-part />
+  <div class="modale">
+    <theme-card />
+  </div>
   <a-propos-part />
   <mes-services />
   <mes-competences />
@@ -13,6 +16,7 @@
 </template>
 
 <script lang="ts">
+
 import Vue from 'vue'
 import navBar from '@/components/navBar.vue'
 import accueilPart from '@/components/accueilPart.vue'
@@ -21,6 +25,9 @@ import mesServices from '@/components/services/mesServices.vue'
 import mesCompetences from '@/components/competences/mesCompetences.vue'
 import monPortfolio from '@/components/portfolio/monPortfolio.vue'
 import monContact from '~/components/contact/monContact.vue'
+import themeCard from '~/components/themeCard.vue'
+
+
 
 export default Vue.extend({
   name: 'IndexPage',
@@ -31,7 +38,8 @@ export default Vue.extend({
     mesServices,
     mesCompetences,
     monPortfolio,
-    monContact
+    monContact,
+    themeCard
   },
   layout () {
     return 'defaultPage'

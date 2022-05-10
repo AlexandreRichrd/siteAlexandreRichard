@@ -26,4 +26,24 @@ body {
   --font-color: #DCDCDC;
   --main-color: #4672E3;
 }
+
+[main-color=marron]{
+  --main-color: #CAB785;
+}
+
+[main-color=rouge]{
+  --main-color: #C15555;
+}
+
+[main-color=violet]{
+  --main-color: #9D53AF;
+}
+
+[main-color=bleu]{
+  --main-color: #53AAAF;
+}
+
+[main-color=vert]{
+  --main-color: #54AF53;
+}
 </style>

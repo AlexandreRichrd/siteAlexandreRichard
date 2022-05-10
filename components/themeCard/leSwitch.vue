@@ -1,6 +1,6 @@
 <template>
   <div :class="dark ? $style['switch1'] : $style['switch2']" @click="toogleTheme()">
-    <div :class="dark ? $style['boutonSwitch1'] : $style['boutonSwitch2']" />
+    <div :class="dark ? $style['boutonSwitch2'] : $style['boutonSwitch1']" />
   </div>
 </template>
 
@@ -14,7 +14,12 @@ export default {
   methods:{
     toogleTheme(){
       this.dark = !this.dark
-
+      if(this.dark){
+        document.documentElement.setAttribute('data-theme', 'darkMode');
+      }else{
+        document.documentElement.setAttribute('data-theme', '');
+      }
+        
     }
   }
 }

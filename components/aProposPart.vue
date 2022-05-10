@@ -51,7 +51,6 @@ p{
 }
 
 .logoEtTexte{
-  margin-top: 10rem;
   display: flex;
   justify-content: center;
   gap: 10rem;

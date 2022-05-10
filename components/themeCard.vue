@@ -23,10 +23,10 @@ export default {
   justify-content: center;
   gap: 2rem;
 
-  background-color: var(--background-color);
+  background-color: rgb(202, 202, 202);
   width: 28.5rem;
   height: 11rem;
   border-radius: 20px;
-  margin: 10rem;
+  
 }
 </style>
