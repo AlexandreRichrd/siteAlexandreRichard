@@ -5,7 +5,7 @@
   </header>
   <accueil-part />
   <bouton-toogle-menu />
-  <div class="modale">
+  <div class="modale" style="display: none">
     <theme-card />
   </div>
   <a-propos-part />

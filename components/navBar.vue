@@ -26,7 +26,7 @@ export default {
   },
   mounted(){
     document.addEventListener("scroll", () => {
-      
+
       if(window.scrollY === 0){
         this.scroll = false
       }else{

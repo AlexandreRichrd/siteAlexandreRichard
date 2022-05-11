@@ -1,12 +1,26 @@
 <template>
-  <div :class="$style['bouton']">
+  <div :class="scroll ? $style['bouton'] : $style['depart']">
     <img src="@/static/images/settings.png" alt="">
   </div>
 </template>
 
 <script>
   export default {
+    data(){
+      return{
+        scroll: false
+      }
+    },
+    mounted(){
+    document.addEventListener("scroll", () => {
 
+      if(window.scrollY <= 570){
+        this.scroll = false
+      }else{
+        this.scroll = true
+      }
+    })
+  }
   }
 </script>
 
@@ -19,6 +33,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 0;
+}
+
+.depart{
+  display: none;
 }
 
 .bouton img{
