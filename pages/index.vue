@@ -4,6 +4,7 @@
     <nav-bar />
   </header>
   <accueil-part />
+  <bouton-toogle-menu />
   <div class="modale">
     <theme-card />
   </div>
@@ -26,6 +27,7 @@ import mesCompetences from '@/components/competences/mesCompetences.vue'
 import monPortfolio from '@/components/portfolio/monPortfolio.vue'
 import monContact from '~/components/contact/monContact.vue'
 import themeCard from '~/components/themeCard.vue'
+import boutonToogleMenu from '~/components/themeCard/boutonToogleMenu.vue'
 
 
 
@@ -39,7 +41,8 @@ export default Vue.extend({
     mesCompetences,
     monPortfolio,
     monContact,
-    themeCard
+    themeCard,
+    boutonToogleMenu
   },
   layout () {
     return 'defaultPage'
