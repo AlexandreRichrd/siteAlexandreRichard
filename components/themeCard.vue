@@ -28,5 +28,8 @@ export default {
   height: 11rem;
   border-radius: 20px;
   
+  position: fixed;
+  top: 50%;
+  left: 0;
 }
 </style>

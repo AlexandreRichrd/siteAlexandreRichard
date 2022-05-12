@@ -4,8 +4,8 @@
     <nav-bar />
   </header>
   <accueil-part />
-  <bouton-toogle-menu />
-  <div class="modale" style="display: none">
+  <bouton-toogle-menu @souris-dessus="reponsehover"/>
+  <div :class="hover ? $style['modalevisible'] : $style['modaleinvisible']">
     <theme-card />
   </div>
   <a-propos-part />
@@ -46,14 +46,34 @@ export default Vue.extend({
   },
   layout () {
     return 'defaultPage'
+  },
+  data(){
+    return{
+      hover: false,
+
+    }
+  },
+  methods:{
+    reponsehover(reponse: boolean){
+      this.hover = reponse
+      console.log(reponse)
+    }
   }
 })
 </script>
 
-<style scoped>
+<style module>
 #page{
   margin: 0;
   background-color: var(--background-color);
+}
+
+.modalevisible{
+  display: block
+}
+
+.modaleinvisible{
+  display: none
 }
 
 </style>
