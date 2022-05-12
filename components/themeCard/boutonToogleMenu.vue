@@ -38,7 +38,7 @@
 <style module>
 .bouton{
   border-radius: 0 20px 20px 0;
-  height: 11rem;
+  height: 12rem;
   width: 5rem;
   background-color: rgb(202, 202, 202);
   display: flex;
@@ -46,7 +46,7 @@
   align-items: center;
   position: fixed;
   top: 50%;
-  left: 0;
+  left: 28.5rem;
 }
 
 .depart{

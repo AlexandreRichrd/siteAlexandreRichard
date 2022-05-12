@@ -4,10 +4,8 @@
     <nav-bar />
   </header>
   <accueil-part />
-  <bouton-toogle-menu @souris-dessus="reponsehover"/>
-  <div :class="hover ? $style['modalevisible'] : $style['modaleinvisible']">
-    <theme-card />
-  </div>
+
+  <theme-card-plus-bouton />
   <a-propos-part />
   <mes-services />
   <mes-competences />
@@ -26,8 +24,7 @@ import mesServices from '@/components/services/mesServices.vue'
 import mesCompetences from '@/components/competences/mesCompetences.vue'
 import monPortfolio from '@/components/portfolio/monPortfolio.vue'
 import monContact from '~/components/contact/monContact.vue'
-import themeCard from '~/components/themeCard.vue'
-import boutonToogleMenu from '~/components/themeCard/boutonToogleMenu.vue'
+import themeCardPlusBouton from '~/components/themeCard/themeCardPlusBouton.vue'
 
 
 
@@ -41,8 +38,7 @@ export default Vue.extend({
     mesCompetences,
     monPortfolio,
     monContact,
-    themeCard,
-    boutonToogleMenu
+    themeCardPlusBouton
   },
   layout () {
     return 'defaultPage'
