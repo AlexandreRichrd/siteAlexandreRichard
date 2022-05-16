@@ -4,8 +4,9 @@
     <nav-bar />
   </header>
   <accueil-part />
-
+  
   <theme-card-plus-bouton />
+
   <a-propos-part />
   <mes-services />
   <mes-competences />
@@ -27,7 +28,6 @@ import monContact from '~/components/contact/monContact.vue'
 import themeCardPlusBouton from '~/components/themeCard/themeCardPlusBouton.vue'
 
 
-
 export default Vue.extend({
   name: 'IndexPage',
   components: {
@@ -46,7 +46,6 @@ export default Vue.extend({
   data(){
     return{
       hover: false,
-
     }
   },
   methods:{
@@ -70,6 +69,10 @@ export default Vue.extend({
 
 .modaleinvisible{
   display: none
+}
+
+.cardTheme{
+
 }
 
 </style>
