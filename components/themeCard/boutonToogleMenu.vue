@@ -1,5 +1,5 @@
 <template>
-  <div :class="scroll ? $style['bouton'] : $style['depart']" @mouseenter="toogleMenu()" @mouseleave="untoogleMenu()">
+  <div :class="scroll ? $style['bouton'] : $style['depart']">
     <img src="@/static/images/settings.png" alt="">
   </div>
 </template>
@@ -21,16 +21,6 @@
           this.scroll = true
         }
       })
-    },
-    methods: {
-      toogleMenu(){
-        this.hover = true
-        this.$emit('souris-dessus', this.hover)
-      },
-      untoogleMenu(){
-        this.hover = false
-        this.$emit('souris-dessus', this.hover)
-      }
     }
   }
 </script>
@@ -44,8 +34,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 50%;
+  /* position: absolute;
+  top: 50%; */
   left: 28.5rem;
 }
 

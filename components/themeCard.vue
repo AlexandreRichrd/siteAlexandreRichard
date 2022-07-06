@@ -26,10 +26,10 @@ export default {
   background-color: rgb(202, 202, 202);
   width: 28.5rem;
   height: 12rem;
-  border-radius: 20px 0 0 20px;
 
-  position: fixed;
-  top: 50%;
+
+  /* position: absolute;
+  top: 50%; */
   left: 0;
 }
 </style>

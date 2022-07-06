@@ -4,10 +4,10 @@
     <ul :class="$style['listeNavbar']">
       <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Accueil</li>
       <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">À propos</li>
-      <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Services</li>
+      <!-- <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Services</li> -->
       <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Compétences</li>
       <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Portfolio</li>
-      <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Contact</li>
+      <!-- <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Contact</li> -->
     </ul>
     <div :class="$style['social']">
       <a href="https://www.instagram.com/alexandre_richrd/"><img src="@/static/images/instagram.png" alt="Lien Instagram" :class="$style['imageSocial']" /></a>
@@ -67,6 +67,7 @@ export default {
   font-size: 1.2rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #DFDFDF;
+  cursor: pointer;
 }
 
 .social{
@@ -100,6 +101,7 @@ export default {
   font-size: 1.2rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--font-color);
+  cursor: pointer;
 }
 
 </style>

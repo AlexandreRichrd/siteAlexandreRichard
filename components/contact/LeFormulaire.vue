@@ -6,8 +6,8 @@
         <input id="nom" type="text"/>
       </div>
       <div :class="$style['prenom']">
-        <label for="nom">Prénom*</label>
-        <input id="nom" type="prenom"/>
+        <label for="prenom">Prénom*</label>
+        <input id="prenom" type="text"/>
       </div>
     </div>
     <div :class="$style['email']">
@@ -33,7 +33,7 @@
 <script>
 
   export default {
-    
+
   }
 </script>
 

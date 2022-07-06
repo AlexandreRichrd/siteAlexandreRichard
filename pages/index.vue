@@ -4,15 +4,18 @@
     <nav-bar />
   </header>
   <accueil-part />
+  <div :class=" hover ? $style['theme2'] : $style['theme']" @mouseenter="reponsehover(true)" @mouseleave="reponsehover(false)">
+    <theme-card-plus-bouton />
+  </div>
 
-  <theme-card-plus-bouton />
   <a-propos-part />
-  <mes-services />
+  <!-- <mes-services /> -->
   <mes-competences />
   <mon-portfolio />
-  <mon-contact />
+  <!-- <mon-contact /> -->
 </div>
 </template>
+
 
 <script lang="ts">
 
@@ -20,10 +23,10 @@ import Vue from 'vue'
 import navBar from '@/components/navBar.vue'
 import accueilPart from '@/components/accueilPart.vue'
 import aProposPart from '@/components/aProposPart.vue'
-import mesServices from '@/components/services/mesServices.vue'
+// import mesServices from '@/components/services/mesServices.vue'
 import mesCompetences from '@/components/competences/mesCompetences.vue'
 import monPortfolio from '@/components/portfolio/monPortfolio.vue'
-import monContact from '~/components/contact/monContact.vue'
+// import monContact from '~/components/contact/monContact.vue'
 import themeCardPlusBouton from '~/components/themeCard/themeCardPlusBouton.vue'
 
 
@@ -34,10 +37,10 @@ export default Vue.extend({
     navBar,
     accueilPart,
     aProposPart,
-    mesServices,
+    // mesServices,
     mesCompetences,
     monPortfolio,
-    monContact,
+    // monContact,
     themeCardPlusBouton
   },
   layout () {
@@ -58,6 +61,7 @@ export default Vue.extend({
 })
 </script>
 
+
 <style module>
 #page{
   margin: 0;
@@ -72,4 +76,13 @@ export default Vue.extend({
   display: none
 }
 
+.theme{
+  transform: translateX(-28.5rem);
+  transition: transform  0.2s ease-in-out;
+}
+
+.theme2{
+  transform: translateX(0rem);
+  transition: transform  0.2s ease-in-out;
+}
 </style>

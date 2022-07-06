@@ -9,10 +9,11 @@ body {
   padding: 0;
   height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--background-color);
 }
 
 :root{
-  --background-color: #DCDCDC;
+  --background-color: #f1f1f1;
   --secondary-background-color: #C4C4C4;
   --sub-title-color: #7F7F7F;
   --font-color: #808080;
