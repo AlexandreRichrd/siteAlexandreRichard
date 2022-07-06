@@ -30,7 +30,6 @@ import monPortfolio from '@/components/portfolio/monPortfolio.vue'
 import themeCardPlusBouton from '~/components/themeCard/themeCardPlusBouton.vue'
 
 
-
 export default Vue.extend({
   name: 'IndexPage',
   components: {
@@ -49,7 +48,6 @@ export default Vue.extend({
   data(){
     return{
       hover: false,
-
     }
   },
   methods:{
