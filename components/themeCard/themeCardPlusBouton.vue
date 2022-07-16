@@ -19,8 +19,6 @@ export default {
 
 <style scoped>
 #themeCard{
-  position: fixed;
-  top: 50%;
   display: flex;
 }
 

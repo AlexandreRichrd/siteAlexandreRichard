@@ -15,12 +15,17 @@ import boutonPortfolio from "./boutonPortfolio.vue"
 
 <style module>
 .item{
-  background-color: var(--secondary-background-color);
+  background-color: var(--portfolio-background-color);
   width: 32.2rem;
   height: 14.5rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 1rem;
+  background-image: url('@/static/images/portfolio/portfolio.png');
+  background-size:75% ;
+  background-position-y: top;
+  background-position-x: center;
+  background-repeat: no-repeat;
 }
 </style>

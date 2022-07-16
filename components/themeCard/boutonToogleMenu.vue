@@ -15,11 +15,12 @@
     mounted(){
       document.addEventListener("scroll", () => {
 
-        if(window.scrollY <= 570){
+        if(window.scrollY <= 610){
           this.scroll = false
         }else{
           this.scroll = true
         }
+        console.log(window.scrollY)
       })
     }
   }
@@ -32,6 +33,7 @@
   width: 5rem;
   background-color: rgb(202, 202, 202);
   display: flex;
+  animation: display 3s ease-in-out;
   justify-content: center;
   align-items: center;
   /* position: absolute;
@@ -40,6 +42,7 @@
 }
 
 .depart{
+  animation: display 3s ease-in-out;
   display: none;
 }
 

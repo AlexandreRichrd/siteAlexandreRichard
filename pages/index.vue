@@ -75,11 +75,15 @@ export default Vue.extend({
 }
 
 .theme{
+  position: fixed;
+  top:40%;
   transform: translateX(-28.5rem);
   transition: transform  0.2s ease-in-out;
 }
 
 .theme2{
+  position: fixed;
+  top:40%;
   transform: translateX(0rem);
   transition: transform  0.2s ease-in-out;
 }
