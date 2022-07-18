@@ -14,7 +14,7 @@ import boutonPortfolio from "./boutonPortfolio.vue"
 </script>
 
 <style module>
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   .item{
     background-color: var(--portfolio-background-color);
     width: 20rem;
@@ -30,7 +30,7 @@ import boutonPortfolio from "./boutonPortfolio.vue"
     background-repeat: no-repeat;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 991px) {
   .item{
     background-color: var(--portfolio-background-color);
     width: 32.2rem;

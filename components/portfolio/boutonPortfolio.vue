@@ -12,7 +12,7 @@
 
 <style module>
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   .btnPortfolio{
     background-color: var(--main-color);
     width: 15rem;
@@ -28,7 +28,7 @@
     font-size: 2em;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 991px) {
   .btnPortfolio{
     background-color: var(--main-color);
     width: 373px;

@@ -18,8 +18,16 @@ export default {
 </script>
 
 <style scoped>
-#themeCard{
-  display: flex;
+@media only screen and (max-width: 600px){
+  #themeCard{
+    display: none;
+  }
 }
+@media only screen and (min-width: 601px){
+  #themeCard{
+    display: flex;
+  }
+}
+
 
 </style>

@@ -21,14 +21,13 @@ export default {
   methods: {
     toogleNav(){
       this.nav = !this.nav
-      console.log("tootlge")
     }
   }
 }
 </script>
 
 <style module>
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   #mobile-bar{
   }
 
@@ -44,7 +43,7 @@ export default {
     flex-direction: column;
     align-items: center;
     background-color: #696969b6;
-    height: 87.4vh;
+    height: 84%;
     position: absolute;
     z-index: 10;
     transform: translateY(0);
@@ -63,7 +62,7 @@ export default {
     font-size: 1.6rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-    width: 10rem;
+
     border-bottom: 1px solid rgb(105, 105, 105);
 
     cursor: pointer;
@@ -94,7 +93,7 @@ export default {
     border-bottom: 1px solid rgb(105, 105, 105);
   }
 }
-@media only screen and (min-width: 601px){
+@media only screen and (min-width: 991px){
   #mobile-bar{
     display: none;
   }

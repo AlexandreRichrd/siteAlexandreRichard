@@ -31,30 +31,31 @@ export default {
 </script>
 
 <style scoped>
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   #about{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7rem 0 10rem 0;
+    margin:  5rem 0;
   }
 
   .logoEtTexte{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10rem;
+    gap: 3rem;
   }
 
   h3{
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 400;
     color: var(--sub-title-color);
   }
 
   p{
+    font-size: 0.7em;
     color: var(--sub-title-color);
-    width: 25rem;
+    width: 20rem;
     text-align: justify;
   }
 
@@ -62,7 +63,7 @@ export default {
     width: 20rem;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 991px) {
   #about{
     display: flex;
     flex-direction: column;

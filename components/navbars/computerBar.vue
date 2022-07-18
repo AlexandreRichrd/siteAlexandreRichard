@@ -39,7 +39,7 @@ export default {
 
 <style module>
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   .navbarTransparent{
     display: none;
   }
@@ -48,7 +48,7 @@ export default {
     display: none;
   }
 }
-@media only screen and (max-width: 1550px) and (min-width: 601px){
+@media only screen and (max-width: 1550px) and (min-width: 991px){
   .navbarTransparent{
   background-color: rgba(172, 172, 172, 0.1);
   height: 4.5rem;

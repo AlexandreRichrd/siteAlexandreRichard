@@ -27,7 +27,7 @@ import itemPortfolio from "./itemPortfolio.vue"
 
 <style module>
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   .partiePortfolio{
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ import itemPortfolio from "./itemPortfolio.vue"
     gap: 6rem;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 991px) {
   .partiePortfolio{
     display: flex;
     flex-direction: column;

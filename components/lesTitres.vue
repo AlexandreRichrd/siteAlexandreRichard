@@ -22,7 +22,7 @@
 </script>
 
 <style scoped>
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   .titres{
   display: flex;
   flex-direction: column;
@@ -32,13 +32,13 @@
 h1{
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 h2{
   color: var(--sub-title-color);
   font-weight: 400;
-  font-size: 2em;
+  font-size: 1.3em;
   margin-bottom: 3rem;
   text-align: center;
   width: 70%;
@@ -52,7 +52,7 @@ hr{
   margin-bottom: 5rem;
 }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 991px) {
 .titres{
   display: flex;
   flex-direction: column;

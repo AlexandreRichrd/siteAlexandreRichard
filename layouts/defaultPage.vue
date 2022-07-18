@@ -6,6 +6,7 @@
 <style>
 html{
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
   height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 :root{
