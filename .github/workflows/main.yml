@@ -30,10 +30,10 @@ jobs:
         run: yarn
 
       - name: 🔨 Build Project
-        run: yarn build
+        run: yarn generate
 
       - name: List output files
-        run: find out/ -print
+        run: find dist/ -print
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
@@ -41,6 +41,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER}}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: out/
+          local-dir: dist/
           server-dir: httpdocs/
           dangerous-clean-slate: true
