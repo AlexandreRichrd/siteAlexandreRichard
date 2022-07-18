@@ -31,28 +31,63 @@ export default {
 </script>
 
 <style scoped>
-#about{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 7rem 0 10rem 0;
+@media only screen and (max-width: 600px) {
+  #about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0 10rem 0;
+  }
+
+  .logoEtTexte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  h3{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--sub-title-color);
+  }
+
+  p{
+    color: var(--sub-title-color);
+    width: 25rem;
+    text-align: justify;
+  }
+
+  img{
+    width: 20rem;
+  }
+}
+@media only screen and (min-width: 601px) {
+  #about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0 10rem 0;
+  }
+
+  h3{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--sub-title-color);
+  }
+
+  p{
+    color: var(--sub-title-color);
+    width: 22rem;
+    text-align: justify;
+  }
+
+  .logoEtTexte{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+  }
+
 }
 
-h3{
-  font-size: 1.5em;
-  font-weight: 400;
-  color: var(--sub-title-color);
-}
-
-p{
-  color: var(--sub-title-color);
-  width: 22rem;
-  text-align: justify;
-}
-
-.logoEtTexte{
-  display: flex;
-  justify-content: center;
-  gap: 10rem;
-}
 </style>
