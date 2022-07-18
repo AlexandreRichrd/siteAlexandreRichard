@@ -1,6 +1,6 @@
 <template>
   <div :class="scroll ? $style['bouton'] : $style['depart']">
-    <img src="@/static/images/settings.png" alt="">
+    <img src="/images/settings.png" alt="">
   </div>
 </template>
 
