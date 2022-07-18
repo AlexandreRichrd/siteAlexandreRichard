@@ -1,6 +1,6 @@
 <template>
   <header :class="scroll ? $style['navbarCouleur'] : $style['navbarTransparent']">
-    <img src="@/static/images/logo.svg" alt="logo" :class="$style['logo']">
+    <img src="/images/logo.svg" alt="logo" :class="$style['logo']">
     <ul :class="$style['listeNavbar']">
       <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Accueil</li>
       <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">À propos</li>
@@ -10,8 +10,8 @@
       <!-- <li :class="scroll ? $style['membreListeNavbarCouleur'] : $style['membreListeNavbar']">Contact</li> -->
     </ul>
     <div :class="$style['social']">
-      <a href="https://www.instagram.com/alexandre_richrd/"><img src="@/static/images/instagram.png" alt="Lien Instagram" :class="$style['imageSocial']" /></a>
-      <a href="https://www.linkedin.com/in/alexandre-richard-5035a3194"><img src="@/static/images/linkedin.png" alt="Lien LinkedIn" :class="$style['imageSocial']" /></a>
+      <a href="https://www.instagram.com/alexandre_richrd/"><img src="/images/instagram.png" alt="Lien Instagram" :class="$style['imageSocial']" /></a>
+      <a href="https://www.linkedin.com/in/alexandre-richard-5035a3194"><img src="/images/linkedin.png" alt="Lien LinkedIn" :class="$style['imageSocial']" /></a>
     </div>
   </header>
 </template>
