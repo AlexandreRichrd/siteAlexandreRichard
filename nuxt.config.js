@@ -44,7 +44,11 @@ export default {
     baseURL: '/',
   },
 
+  mode: 'spa',
+
   target: 'static',
+
+  modern: true,
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
