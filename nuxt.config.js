@@ -44,6 +44,8 @@ export default {
     baseURL: '/',
   },
 
+  target: 'static',
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
